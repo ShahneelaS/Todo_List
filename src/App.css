@@ -1,0 +1,108 @@
+body {
+  background: #1f4037;
+  background: -webkit-linear-gradient(to right, #99f2c8, #1f4037);
+  background: linear-gradient(to right, #99f2c8, #1f4037);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.todo-list {
+  width: 90%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  background: #2c3e50;
+  background: -webkit-linear-gradient(to right, #4ca1af, #2c3e50);
+  background: linear-gradient(to right, #4ca1af, #2c3e50);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.todo-list h1 {
+  margin-top: 0;
+  font-weight: bold;
+  color: #e0e4e4;
+  font-size: 1.8rem;
+}
+
+.todo-list form {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.todo-list input[type="text"] {
+  flex: 1;
+  min-width: 200px;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #c0c0c0;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.todo-list input[type="text"]:focus {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  outline: none;
+  border-color: #4ca1af;
+}
+
+.todo-list button[type="submit"] {
+  background-color: #3498db;
+  color: #ffffff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+  min-width: 100px;
+}
+
+.todo-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-list li {
+  padding: 15px;
+  border-bottom: 1px solid #4ca1af;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  transition: background-color 0.3s;
+}
+
+.todo-list li:hover {
+  background-color: #34495e;
+}
+
+.todo-list button {
+  background-color: #e74c3c;
+  color: #ffffff;
+  border: none;
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+  margin: 5px 0;
+}
+
+.todo-list span {
+  color: #e0e4e4;
+  font-size: 1rem;
+  flex: 1;
+}
